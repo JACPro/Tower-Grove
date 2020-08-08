@@ -1,0 +1,79 @@
+Updated List V2
+
+User Interface
+	Main menu
+	ingame UI
+	End screen (basic win/lose)
+
+AllyMovement
+	attack enemy closest to the grove when in critical area
+	else patrol/stand within summoned area until enemy enters
+
+EnemyShellShooting
+
+SpawnerScript
+	how many enemies
+	for each enemy
+		pick location
+		pick element
+		DONE spawn
+DONE Disappearing buildings/growing earth
+
+DONE Allow players to place plants in given areas
+
+DONE Allow player to summon golems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//On player//
+PlayerMovement
+	DONE standard WASD
+
+UI
+	Main menu
+	ingame UI
+	End screen (basic win/lose)
+
+CameraFollow
+	DONE needs to follow the directino the player is looking at with the mouse, independent of player movement (if possible)
+GameManager
+	DONE base hearts 
+	DONE 4x resources (fire water lightning earth)
+	DONE wave counter
+	DONE player health
+
+//Elementals and Enemies are both Creatures//
+Creature (parent class)
+	DONE health
+	DONE element (to be publicly assigned)
+	DONE damage
+	DONE move speed
+
+Elemental
+	attack enemy closest to the grove when in critical area
+	else patrol/stand within summoned area until enemy enters
+
+//Enemies//
+Enemy inherits from Creature
+	target radius (i.e. the range at which it detects an ally to attack)
+	destination (where it will walk unless enemy detected i target radius)
+	
+
+Plant (parent class)
+	DONE enum resourceGenerator (fire, water, lightning, earth)
+	DONE time between resource given (eg 10 seconds)
+	
+	
